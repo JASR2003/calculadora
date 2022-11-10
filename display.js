@@ -10,7 +10,7 @@ class Display {
             sumar: "+",
             restar: "-",
             multiplicar: "x",
-            dividir: "/",
+            dividir: "÷",
         }
     }
 
