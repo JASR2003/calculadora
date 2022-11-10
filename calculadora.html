@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap" rel="stylesheet">
+    <script src="Calculadora2.js" type="text/javascript"></script>
+    <script src="display.js" type="text/javascript"></script>
+    <script src="calculadora.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button onclick="display.borrarTodo()" class="col-2">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">x</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="numero col-2">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+</body>
+</html>
