@@ -66,3 +66,7 @@ button:active {
 #valor-anterior {
     font-size: 2.0rem;
 }
+
+.multiplicar {
+    rotate: 45deg;
+}
