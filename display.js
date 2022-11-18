@@ -15,7 +15,7 @@ class Display {
     }
 
     borrar() {
-        this.valorActual = this.valorActual.toString().slice(0,-1);
+        this.valorAnterior = this.valorAnterior.toString().slice(0,-1);
         this.imprimirValores();
     }
 
@@ -29,14 +29,14 @@ class Display {
     computar(tipo) {
         this.tipoOperacion !== "igual" && this.calcular();
         this.tipoOperacion = tipo;
-        this.valorAnterior = this.valorActual || this.valorAnterior;
+        this.valorAnterior = this.valorAnterior || this.valorActual;
         this.valorActual = "";
         this.imprimirValores();
     }
 
     agregarNumero(numero) {
-        if(numero === "." &&this.valorActual.includes(".")) return;
-        this.valorActual = this.valorActual.toString() + numero.toString();
+        if(numero === "." &&this.valorAnterior.includes(".")) return;
+        this.valorAnterior = this.valorAnterior.toString() + numero.toString();
         this.imprimirValores();
     }
 
