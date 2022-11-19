@@ -38,7 +38,6 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     text-align: right;
-    overflow: hidden;
 }
 
 button {
