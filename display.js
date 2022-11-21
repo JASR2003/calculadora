@@ -43,9 +43,9 @@ class Display {
     }
 
     imprimirValores() {
-        this.displayValorActual.textContent =  `${this.valorAnterior}  ${this.signos[this.tipoOperacion] || ""} ${this.valorActual} `;
+        this.displayValorActual.textContent =  this.operaciones.join(" ") ;
         // this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ""} `;
-        this.displayValorAnterior.textContent = this.operaciones.join(" ");
+        this.displayValorAnterior.textContent = `${this.valorAnterior}  ${this.signos[this.tipoOperacion] || ""} ${this.valorActual} `;
     }
 
     calcular() {
