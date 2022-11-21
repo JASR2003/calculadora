@@ -43,7 +43,7 @@ class Display {
     }
 
     imprimirValores() {
-        this.displayValorActual.textContent =  `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ""} `;
+        this.displayValorActual.textContent =  `${this.valorAnterior}  ${this.signos[this.tipoOperacion] || ""} ${this.valorActual} `;
         // this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ""} `;
         this.displayValorAnterior.textContent = this.operaciones.join(" ");
     }
