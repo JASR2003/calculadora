@@ -15,6 +15,13 @@ body {
     height: 100vh;
 }
 
+.container-2 {
+    margin-left: 40px;
+}
+.form-check{
+    margin-bottom: 15px;
+}
+
 .calculadora {
     display: grid;
     grid-template-columns: repeat(4 , 75px);
@@ -38,6 +45,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     text-align: right;
+    overflow: hidden;
 }
 
 button {
@@ -51,11 +59,33 @@ button {
     box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
 }
 
+.rosa {
+    background-color: #d88994;
+    box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
+}
+.naranja {
+    background-color: #FF8000;
+    box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
+}
+.gris {
+    background-color: #7C6879;
+    box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
+}
+
 button:active {
     background-color: #016b52;
 }
+.rosa:active {
+    background-color: #c77f89;
+}
+.naranja:active {
+    background-color: #db6e00;
+}
+.gris:active {
+    background-color: #505050;
+}
 
-.col-2 {
+#col-2 {
     grid-column: span 2;
 }
 

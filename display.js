@@ -63,3 +63,5 @@ class Display {
         this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual);
     }
 }
+
+//  if (tipoOperacion === "x+" && this.valorActual.lenght.includes("x+")) return;
