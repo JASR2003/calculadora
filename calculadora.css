@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Calculator';
+    src: url('/Calculator.ttf') format('truetype');
+}
+
 * {
-    font-family: 'Fraunces', serif;
+    font-family: 'Calculator';
+    font-weight: normal;
+    font-style: normal;
     color: white;
 }
 
@@ -18,15 +25,17 @@ body {
 .container-2 {
     margin-left: 40px;
 }
-.form-check{
+
+.form-check {
     margin-bottom: 15px;
+    font-size: 1.4rem;
 }
 
 .calculadora {
     display: grid;
-    grid-template-columns: repeat(4 , 75px);
-    grid-template-rows: 160px repeat(5 , 75px);
-    background-color: #00795c;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #017c5f;
     padding: 15px;
     border-radius: 30px;
     box-shadow: 10px 8px 0px 5px #01644d;
@@ -53,9 +62,9 @@ button {
     margin: 5px;
     padding: 0;
     border-radius: 30px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     border: none;
-    background-color: #00795c;
+    background-color: #017c5f;
     box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
 }
 
@@ -63,10 +72,12 @@ button {
     background-color: #d88994;
     box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
 }
+
 .naranja {
     background-color: #FF8000;
     box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
 }
+
 .gris {
     background-color: #7C6879;
     box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950;
@@ -75,12 +86,15 @@ button {
 button:active {
     background-color: #016b52;
 }
+
 .rosa:active {
     background-color: #c77f89;
 }
+
 .naranja:active {
     background-color: #db6e00;
 }
+
 .gris:active {
     background-color: #505050;
 }
@@ -90,13 +104,15 @@ button:active {
 }
 
 #valor-actual {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 #valor-anterior {
-    font-size: 2.0rem;
+    font-size: 1.6rem;
 }
 
-.multiplicar {
+.multiplicar p {
     rotate: 45deg;
+    margin-top: 15px;
+    margin-right: -1px;
 }

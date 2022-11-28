@@ -5,12 +5,12 @@ function colores() {
 
     function verde() {
         if(document.getElementById('verde').checked) {
-            calc.style.background ="#00795c";
+            calc.style.background ="#017c5f";
             calc.style.boxShadow ="10px 8px 0px 5px #01644d";
             //botonesNumerosYOperadores.style.background ="#00795c";
             //botonesNumerosYOperadores.style.boxShadow ="5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950";
             botonesNumerosYOperadores.forEach(boton => {
-                boton.style.background = "#00795c";
+                boton.style.background = "#017c5f";
                 boton.style.boxShadow = "5px 5px 10px -3px #00000050, -5px -5px 10px 3px #00745950";
             
             })
