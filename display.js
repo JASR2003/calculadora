@@ -36,6 +36,10 @@ class Display {
         this.imprimirValores();
     }
 
+    esSigno(cadena) {
+        return cadena == "+" || cadena == "-" || cadena == "x" || cadena == "÷";
+    }
+
     agregarNumero(numero) {
         if (numero === "." && this.valorActual.includes(".")) return;
         this.valorActual = this.valorActual.toString() + numero.toString();
@@ -43,23 +47,30 @@ class Display {
     }
 
     imprimirValores() {
-        if (this.tipoOperacion === "igual") {
+        /*if (this.tipoOperacion === "igual") {
         this.displayValorAnterior.textContent =  this.operaciones.join(" ") ;
         // this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ""} `;
         this.displayValorActual.textContent = `${this.valorAnterior}  ${this.signos[this.tipoOperacion] || ""} ${this.valorActual} `;
-        } else {
+        } else {*/
+        console.log(this.operaciones, "operaciones")
         this.displayValorActual.textContent =  this.operaciones.join(" ") ;
         // this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ""} `;
         this.displayValorAnterior.textContent = `${this.valorAnterior}  ${this.signos[this.tipoOperacion] || ""} ${this.valorActual} `;
-        }
+        //}
     }
 
     calcular() {
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual = parseFloat(this.valorActual);
-        this.operaciones = this.operaciones.concat([this.signos[this.tipoOperacion], isNaN(valorActual) ? "" : valorActual])
-
+        
         if (isNaN(valorActual) || isNaN(valorAnterior)) return
+        const signo = this.signos[this.tipoOperacion];
+        if (this.operaciones.length === 0) {
+            this.operaciones = this.operaciones.concat([valorAnterior, signo, valorActual])
+
+        } else {
+            this.operaciones = this.operaciones.concat([signo, isNaN(valorActual) ? "" : valorActual])
+        }
         this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual);
     }
 }
