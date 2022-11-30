@@ -47,7 +47,7 @@ class Display {
         if ( this.tipoOperacion === "igual" && this.valorActual.includes((numero))) {
             return this.borrarTodo();
         }
-    }x
+    }
 
     imprimirValores() {
         /*if (this.tipoOperacion === "igual") {
