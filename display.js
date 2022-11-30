@@ -44,7 +44,10 @@ class Display {
         if (numero === "." && this.valorActual.includes(".")) return;
         this.valorActual = this.valorActual.toString() + numero.toString();
         this.imprimirValores();
-    }
+        if ( this.tipoOperacion === "igual" && this.valorActual.includes((numero))) {
+            return this.borrarTodo();
+        }
+    }x
 
     imprimirValores() {
         /*if (this.tipoOperacion === "igual") {
