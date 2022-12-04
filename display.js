@@ -46,6 +46,11 @@ class Display {
         if (this.tipoOperacion === "igual" && this.valorActual.includes((numero))) {
             return this.borrarTodo();
         }
+//esto aún no está resuelto
+
+        if(this.operaciones.length[0] && this.tipoOperacion === "igual") {
+            return this.valorActual = 0;
+        }
         this.imprimirValores();
     }
 
@@ -74,6 +79,6 @@ class Display {
             this.operaciones = this.operaciones.concat([signo, isNaN(valorActual) ? "" : valorActual])
         }
         this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual);
-    }
+    }   
 }
 //  if (tipoOperacion === "x+" && this.valorActual.lenght.includes("x+")) return;
